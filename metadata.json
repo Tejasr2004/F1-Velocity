@@ -1,0 +1,7 @@
+{
+  "name": "Copy of F1 Velocity ",
+  "description": "An interactive Formula 1 dashboard that visualizes lap records and current standings with AI-driven insights for beginners.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

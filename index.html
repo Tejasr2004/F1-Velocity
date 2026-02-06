@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Velocity Hub | Performance Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --porsche-white: #ffffff;
+            --porsche-light-grey: #f2f2f2;
+            --porsche-dark-grey: #191919;
+            --porsche-medium-grey: #626262;
+            --f1-red: #e10600;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--porsche-white);
+            color: var(--porsche-dark-grey);
+            -webkit-font-smoothing: antialiased;
+        }
+        .f1-font {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: -0.05em;
+        }
+        .porsche-border {
+            border-color: #e5e5e5;
+        }
+        .porsche-card {
+            background: var(--porsche-white);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .porsche-card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .btn-porsche-primary {
+            background-color: var(--porsche-dark-grey);
+            color: var(--porsche-white);
+            transition: background-color 0.3s ease;
+        }
+        .btn-porsche-primary:hover {
+            background-color: var(--f1-red);
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--porsche-light-grey);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--porsche-medium-grey);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
